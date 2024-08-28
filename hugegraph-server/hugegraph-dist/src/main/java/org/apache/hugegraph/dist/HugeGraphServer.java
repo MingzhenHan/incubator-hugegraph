@@ -82,11 +82,11 @@ public class HugeGraphServer {
 
         // Start Memory Monitor Task
         this.memoryMonitor = new MemoryMonitor(restServerConf);
-        this.memoryMonitor.start();
+        // this.memoryMonitor.start();
     }
 
     public void stop() {
-        this.memoryMonitor.stop();
+        // this.memoryMonitor.stop();
 
         try {
             this.gremlinServer.stop().get();
